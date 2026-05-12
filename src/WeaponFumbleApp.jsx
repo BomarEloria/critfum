@@ -154,7 +154,7 @@ export default function WeaponFumbleApp() {
   />
 </div>
   <button onClick={generateFumble}>Resolve Fumble (d100)</button>
-  <input
+  <input></input>
 
     </div>
   );
