@@ -1,7 +1,5 @@
 import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
+
 
 /*
 Weapon Fumble App
@@ -148,27 +146,16 @@ export default function WeaponFumbleApp() {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
-      <Card className="w-full max-w-xl shadow-lg">
-        <CardContent className="p-6 space-y-4">
-          <h1 className="text-xl font-semibold">Weapon Fumble Generator (Stable)</h1>
-          <select className="w-full border p-2" value={type} onChange={e => setType(e.target.value)}>
-            <option value="oneHanded">One‑Handed</option>
-            <option value="twoHanded">Two‑Handed</option>
-            <option value="spearPolearms">Spear & Polearms</option>
-            <option value="mountedArms">Mounted Arms</option>
-            <option value="thrownArms">Thrown Arms</option>
-            <option value="bows">Bows</option>
-          </select>
-          <Input type="number" min={1} max={100} value={roll} onChange={e => setRoll(Number(e.target.value))} />
-          <Button onClick={generateFumble}>Resolve Fumble (d100)</Button>
-          {result && (
-            <div className="bg-white p-3 rounded shadow">
-              <p><strong>Cause:</strong> {result.cause}</p>
-              <p><strong>Result:</strong> {result.effect}</p>
-            </div>
-          )}
-        </CardContent>
-      </Card>
+     <div style={{ maxWidth: 500, margin: "0 auto" }}><div style={{ maxWidth: 500, margin="number"
+    min={1}
+    max={100}
+    value={roll}
+    onChange={e => setRoll(Number(e.target.value))}
+  />
+</div>
+  <button onClick={generateFumble}>Resolve Fumble (d100)</button>
+  <input
+
     </div>
   );
 }
