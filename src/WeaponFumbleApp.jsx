@@ -147,8 +147,8 @@ export default function WeaponFumbleApp() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-100 p-4">
      <div style={{ maxWidth: 500, margin: "0 auto" }}><div style={{ maxWidth: 500, margin="number"
-    min={1}
-    max={100}
+    min={1},
+    max={100},
     value={roll}
     onChange={e => setRoll(Number(e.target.value))}
   />
