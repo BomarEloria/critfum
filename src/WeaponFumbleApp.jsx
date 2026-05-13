@@ -135,7 +135,7 @@ export default function WeaponFumbleApp() {
 
   return (
     <div style={{ minHeight:"100vh", background:"linear-gradient(135deg,#1e293b,#0f172a)", display:"flex", justifyContent:"center", alignItems:"center" }}>
-      <div style={{ background:"white", padding:20, borderRadius:12, maxWidth:520, width:"90vw", boxShadow:"0 10px 30px rgba(0,0,0,0.3)" }}>
+      <div style={{ background:"white", padding: "clamp(16px, 4vw, 24px)", borderRadius:12, maxWidth:"600px", width:"100%", boxShadow:"0 10px 30px rgba(0,0,0,0.3)" }}>
         <h2 style={{ textAlign:"center" }}>⚔️ Weapon Fumble Generator</h2>
 
         <select value={type} onChange={e=>setType(e.target.value)} style={{ width:"100%", marginBottom:10, padding:8,border: "2px solid #1e40af" }}>
